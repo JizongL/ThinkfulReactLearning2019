@@ -1,6 +1,18 @@
 body {
   background-color:orange;
-  border: 1px solid aquamarine;
+  
   padding:30px
+}
+
+.nav-bar-list{
+  list-style-type: none;
+}
+
+.nav-bar-list li{
+  display:inline-block;
+}
+
+.nav-bar-list li:hover{
+  background-color:white;
 }
 

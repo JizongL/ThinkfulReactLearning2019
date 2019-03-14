@@ -56,7 +56,7 @@ function Contact(props){
   return <section className={props.className}>
                 <h3>Contact Info</h3>    
                 <ul>
-                <li>Name: Sally Wang</li>
+                <li>Name: {props.name}</li>
                 <li>Email: <a href = "mailto:Sally2018@gmail.com">Sally2018@gmail.com </a></li>
                 <li>Phone: <a href="tel:555-555-5555">555-555-5555</a></li>
             </ul>
@@ -73,7 +73,7 @@ function Main(props){
     
     <Education></Education>
     <Employment></Employment>
-    <Contact></Contact>  
+    <Contact name = {props.propName}></Contact>  
    </main>
 }
 
@@ -96,7 +96,7 @@ ReactDOM.render(
     >
     <Nav className='nav-bar-list'></Nav>
     <Header className = 'head-title'propName ='Sally'></Header>
-    <Main className='main-sections'></Main>
+    <Main className='main-sections' propName = 'Sally Wang'></Main>
     
     
     
